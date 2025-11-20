@@ -1,4 +1,5 @@
 package week3;
+import java.util.Scanner;
 
 
 /**
@@ -9,27 +10,19 @@ package week3;
  */
 public class MathOperations
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class MathOperations
-     */
-    public MathOperations()
+    public static void main (String[]arg)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        Scanner hi= new Scanner (System.in);
+        
+        System.out.println("Enter first num");
+        int FNum=hi.nextInt();
+        
+        System.out.println("Enter second num");
+        int SNum=hi.nextInt();
+        
+        System.out.println("Add is:" + "\n"+(FNum+SNum));
+        System.out.println("Subtract is:" +"\n"+ (FNum-SNum));
+        System.out.println("Multiply is:" +"\n"+ (FNum*SNum));
+        System.out.println("Divide is:" + "\n"+(float)(FNum/SNum));
     }
 }
